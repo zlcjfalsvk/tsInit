@@ -18,10 +18,18 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "resolveJsonModule": true,
-        "charset": "utf8"
+        "charset": "utf8",
+        "baseUrl": "./src",
+        "paths": {
+            "src/*": [
+                "./src/*"
+            ]
+        }
     },
     "include": [
         "src/**/*"
     ],
-    "exclude": ["node_modules"]
+    "exclude": [
+        "node_modules"
+    ]
 }
